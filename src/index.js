@@ -4,6 +4,7 @@ import cors from "cors";
 import path from "path";
 import './database';
 import noticiaRouter from './routes/noticias.routes';
+import usuarioRouter from './routes/usuarios.routes';
 
 const app = express(); //instancia de express
 
@@ -22,4 +23,5 @@ app.use(express.urlencoded({ extended: true })); //para entender json tmb el de 
 app.use(express.static(path.join(__dirname, "../public"))); //es para decir q nuestra carpeta public es estatica (y para acceder tmb);
 
 //Ruta...
-app.use('/api/rn', noticiaRouter)
+app.use('/api/rn', noticiaRouter);
+app.use('/api/usuario', usuarioRouter);
