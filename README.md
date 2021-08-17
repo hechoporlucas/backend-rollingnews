@@ -60,6 +60,6 @@ Subimos el proyecto a Heroku para poder tener un manejo compartido sobre el mism
 ## Base de Datos:
 La base de datos fue subida a una URL de Mongodb Atlas.
 
-## Link repositorio de Fronend:
+## Link repositorio de Frontend:
 > https://github.com/Arias-Juan/rolling-new-frontend
 
