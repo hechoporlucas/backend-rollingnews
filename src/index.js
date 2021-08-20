@@ -5,6 +5,7 @@ import path from "path";
 import './database';
 import noticiaRouter from './routes/noticias.routes';
 import usuarioRouter from './routes/usuarios.routes';
+import categoriaRouter from './routes/categorias.routes';
 
 const app = express(); //instancia de express
 
@@ -25,3 +26,4 @@ app.use(express.static(path.join(__dirname, "../public"))); //es para decir q nu
 //Ruta...
 app.use('/api/rn', noticiaRouter);
 app.use('/api/usuario', usuarioRouter);
+app.use('/api/categoria', categoriaRouter);
