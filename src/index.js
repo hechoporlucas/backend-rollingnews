@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true })); //para entender json tmb el de arriba.
 app.use(express.static(path.join(__dirname, "../public"))); //es para decir q nuestra carpeta public es estatica (y para acceder tmb);
 
-//Ruta...
+//Ruta..
 app.use('/api/rn', noticiaRouter);
 app.use('/api/usuario', usuarioRouter);
 app.use('/api/categoria', categoriaRouter);
