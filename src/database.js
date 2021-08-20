@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
-const url = "mongodb://localhost/test";
+// const url = "mongodb://localhost:4000/test";
 
-mongoose.connect(url || process.env.MONGODB_URI, {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/test', {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: true,
