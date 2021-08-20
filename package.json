@@ -4,7 +4,7 @@
   "description": "backend del proyecto de diario digital rolling news",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node src/index.js",
+    "start": "nodemon --exec babel-node src/index.js",
     "dev": "nodemon --exec babel-node src/index.js"
   },
   "keywords": [
