@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const url = "mongodb://localhost:27017/test";
 
-mongoose.connect.MONGODB_URI(url, {
+mongoose.connect(url || process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useFindAndModify: true,
