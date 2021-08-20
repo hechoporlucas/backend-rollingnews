@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const url = "mongodb://localhost:4000/test";
+const url = "mongodb://localhost/test";
 
 mongoose.connect(url || process.env.MONGODB_URI, {
     useNewUrlParser: true,
