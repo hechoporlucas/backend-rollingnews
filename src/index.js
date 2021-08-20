@@ -9,7 +9,7 @@ import categoriaRouter from './routes/categorias.routes';
 
 const app = express(); //instancia de express
 
-app.set("port", process.env.PORT || 27017); //creamos una variable para el puerto
+app.set("port", process.env.PORT || 4000); //creamos una variable para el puerto
 
 app.listen(app.get("port"), () => {
   console.log(path.join(__dirname, "../public"));
